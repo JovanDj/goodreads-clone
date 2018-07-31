@@ -21,5 +21,8 @@ FactoryBot.define do
   factory :book do
     title { FFaker::Book.unique.title }
     author { FFaker::Book.unique.author }
+    after(:build) do |book|
+  book.cover.attach(io: File.open(Rails.root.join('spec', 'factories', 'images', 'book.jpg')), filename: 'book.jpg', content_type: 'image/jpeg')
+end
   end
 end

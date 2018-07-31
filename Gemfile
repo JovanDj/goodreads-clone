@@ -44,7 +44,7 @@ end
 
 group :development do
   gem 'brakeman'
-  gem 'guard-livereload' require: false
+  gem 'guard-livereload', require: false
   gem 'guard-rubocop'
   gem 'listen'
   gem 'rack-livereload'
