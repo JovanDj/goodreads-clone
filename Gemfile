@@ -44,14 +44,13 @@ end
 
 group :development do
   gem 'brakeman'
-  gem 'guard-livereload', '~> 2.5', require: false
+  gem 'guard-livereload' require: false
   gem 'guard-rubocop'
-  gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'listen'
   gem 'rack-livereload'
-  gem 'rails_db', '2.0.2'
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'web-console', '>= 3.3.0'
+  gem 'spring-watcher-listen'
+  gem 'web-console'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'rails-erd'
