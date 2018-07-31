@@ -3,18 +3,16 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+gem 'rails', '~> 5.2.0'
 
 gem 'bootsnap', github: 'ojab/bootsnap', require: false
-gem 'coffee-rails', '~> 4.2'
-gem 'jbuilder', '~> 2.5'
-gem 'puma', '~> 3.11'
-gem 'rails', '~> 5.2.0'
-gem 'sass-rails', '~> 5.0'
-gem 'turbolinks', '~> 5'
-gem 'uglifier', '>= 1.3.0'
-
-gem 'bootstrap', '~> 4.1.2'
+gem 'coffee-rails'
+gem 'jbuilder'
+gem 'puma'
+gem 'sass-rails'
+gem 'turbolinks'
+gem 'uglifier'
+gem 'bootstrap'
 gem 'devise'
 gem 'jquery-rails'
 gem 'omniauth-facebook'
@@ -22,31 +20,23 @@ gem 'pundit'
 gem 'ransack'
 gem 'responders'
 gem 'simple_form'
-gem 'simplecov', require: false, group: :test
-gem 'acts_as_favoritor', github: 'jonhue/acts_as_favoritor'
-gem 'google-cloud-storage', '~> 1.8', require: false
 gem 'jquery-validation-rails'
-gem 'valid_email2'
 gem 'ffaker'
 gem 'autoprefixer-rails'
 gem 'activeadmin'
-gem 'gravatar_image_tag', '~> 1.2'
-gem 'font-awesome-sass', '~> 5.0.13'
-
-gem 'image_processing', '~> 1.2'
+gem 'gravatar_image_tag'
+gem 'font-awesome-sass'
+gem 'image_processing'
 gem 'mini_magick'
 
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'email_spec'
   gem 'factory_bot_rails'
-  gem 'guard-annotate'
   gem 'guard-rspec', require: false
-  gem 'rspec-rails', '~> 3.7'
+  gem 'rspec-rails'
   gem 'rubocop-rails_config'
   gem 'sqlite3'
-  gem 'switch_user'
   gem 'rubocop-rspec'
   gem 'fuubar'
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
@@ -65,6 +55,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'rails-erd'
+  #Helpers
   gem 'consistency_fail'
   gem 'active_record_doctor'
   gem 'nullalign'
