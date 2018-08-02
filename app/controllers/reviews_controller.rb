@@ -26,7 +26,7 @@ class ReviewsController < ApplicationController
   end
 
   def edit
-    @review = Review.find(params[:id])
+    set_review
 
     authorize @review
   end
@@ -58,6 +58,10 @@ class ReviewsController < ApplicationController
 
     def set_book
       @book = Book.find(params[:book_id])
+    end
+
+    def set_review
+      @review = Review.find(params[:id])
     end
 
     def review_params

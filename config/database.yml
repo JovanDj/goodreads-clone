@@ -22,4 +22,5 @@ test: &test
 
 production:
   <<: *default
-  adapter: postgresql
+  adapter: mysql
+  password: RoR12345

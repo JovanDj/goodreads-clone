@@ -54,6 +54,11 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'rails-erd'
+  gem "capistrano"
+gem "capistrano-rails"
+gem "capistrano-passenger"
+gem "capistrano-yarn"
+
   #Helpers
   gem 'consistency_fail'
   gem 'active_record_doctor'
@@ -61,7 +66,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
+  gem 'mysql2'
 end
 
 group :test do
